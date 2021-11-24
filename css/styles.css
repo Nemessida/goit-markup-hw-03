@@ -109,24 +109,28 @@ body {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  list-style: none;
 }
 
-.header-contacts .header-item + .header-item {
-  margin-left: 50px;
+.header-contacts .header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /*-----------------------------hero-------------------*/
 
 .hero {
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--first-bg-color);
 }
 
 .hero-title {
   padding: 0px;
-  margin-top: 200px;
+  margin: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -201,11 +205,22 @@ body {
 }
 
 /*------------------------------about-----------------------*/
+.about-list {
+  display: flex;
+  margin-left: -30px;
+}
 
+.about-item {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
 .about {
   margin-bottom: 94px;
 }
 .about-title {
+  margin: 0px;
+  padding: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -214,8 +229,18 @@ body {
 }
 
 /*------------------------------team-----------------------*/
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: auto;
+  width: 1600px;
+  background-color: var(--second-bg-color);
+}
 
 .team-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -223,7 +248,25 @@ body {
   color: var(--current-title-color);
 }
 
+.team-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-list .team-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-item {
+  background-color: var(--current-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name {
+  margin: 0px auto 10px auto;
+  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -232,6 +275,9 @@ body {
 }
 
 .team-position {
+  margin: 0px;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -298,6 +344,8 @@ body {
 /*------------------------------footer-----------------------*/
 
 .footer {
+  width: 1600px;
+  margin: auto;
   background-color: var(--first-bg-color);
 }
 
