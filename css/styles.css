@@ -324,6 +324,7 @@ img {
 
 .flex-container {
   width: 1170px;
+  padding: 0px;
 }
 
 .project-list {
