@@ -322,6 +322,10 @@ img {
   margin-right: 8px;
 }
 
+.flex-container {
+  width: 1170px;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
