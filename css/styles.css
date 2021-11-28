@@ -220,7 +220,8 @@ img {
 
 /*------------------------------about-----------------------*/
 .about {
-  padding: 94px 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-list {
