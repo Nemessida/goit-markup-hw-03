@@ -130,7 +130,6 @@ header {
 .header-contacts {
   display: flex;
   margin-left: auto;
-  list-style: none;
 }
 
 .header-contacts .header-item:not(:last-child) {
@@ -302,10 +301,8 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  width: 611px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
+  align-items: center;
+  text-align: left;
 }
 
 .filters-list .filter-item:not(:last-child) {
@@ -315,8 +312,7 @@ header {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1170px;
-  padding: 0px;
+  align-items: center;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
